@@ -1,18 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home'; // Example component for the home page
-import Exercises from './pages/Exercises'; // Example component for exercises page
+import Home from './pages/Home'; 
+import Exercises from './pages/Exercises'; 
 import "./output.css";
+import {BodyPartProvider } from "./context/BodyPartContext"
 
 const App = () => {
   return (
     <Router>
-      <div className='h-screen w-full'>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/exercises" element={<Exercises />} />
-        </Routes>
-      </div>
+      <BodyPartProvider>
+        <div className='min-h-screen w-full overflow-hidden'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/exercises" element={<Exercises />} />
+          </Routes>
+        </div>
+      </BodyPartProvider>
     </Router>
   );
 };

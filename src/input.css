@@ -4,14 +4,35 @@
 
 * > * {
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-}
 
 
 body {
   transform: translate3d(0px, 0px, 0px);
   transition: all 700ms ease;
+}
+
+:-webkit-scrollbar {
+ width: 0;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: #212121; /* white background */
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #515151; /* light gray scrollbar */
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #4f4f4f; /* darker gray on hover */
 }
