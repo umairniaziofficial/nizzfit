@@ -51,7 +51,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="w-full bg-black text-white">
+    <div className="w-full bg-black text-white" id="exercises">
       <div className="w-[90%] mx-auto">
         <h1 className="text-center text-4xl py-8 font-semibold tracking-wider">
           Search Exercises

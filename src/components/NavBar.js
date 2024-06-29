@@ -40,7 +40,16 @@ const NavBar = () => {
                 Home
               </a>
             </li>
-            {["Exercises", "About us", "Contact us"].map((item) => (
+            <li className="max-sm:pt-4 px-3">
+              <a
+                className="hover:text-gray-500 transition-colors duration-200"
+                href="#exercises"
+                onClick={onCloseMenu}
+              >
+                Exercises
+              </a>
+            </li>
+            {[ "About us", "Contact us"].map((item) => (
               <li key={item} className="px-3">
                 <a
                   className="hover:text-gray-500 transition-colors duration-200"

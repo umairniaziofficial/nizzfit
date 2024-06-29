@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ExerciseCards = ({ exercises }) => {
   return (
-    <div className="w-full flex justify-center pt-8">
+    <div  className="w-full flex justify-center pt-8">
       <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-12">
         {exercises.length > 0 ? (
           exercises.map((exercise, index) => (

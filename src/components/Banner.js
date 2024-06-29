@@ -11,11 +11,11 @@ const Banner = () => {
           Transform your body and mind with our expert fitness programs.
         </p>
         <div className="flex space-x-4 lg:justify-start justify-center">
-          <button className="bg-cOrange text-white px-6 py-3 rounded-lg hover:bg-[#ff8c00] transition-colors duration-300">
-            Get Started
+          <button className="bg-cOrange text-white px-6 py-3 rounded-lg hover:bg-[#ff8c00] transition-colors duration-300 whitespace-nowrap">
+            <a href="#BMI">Get Started</a>
           </button>
-          <button className="bg-transparent border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#000000] transition-colors duration-300">
-            Learn More
+          <button className="bg-transparent border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-[#000000] transition-colors duration-300 whitespace-nowrap">
+           <a href="#About"> Learn More</a>
           </button>
         </div>
       </div>
