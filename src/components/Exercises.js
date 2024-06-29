@@ -31,9 +31,9 @@ const Exercises = () => {
   }, [bodyPart, setExercises]); 
 
   return (
-    <div className="w-screen bg-black text-white py-4">
+    <div className="w-screen bg-black text-white py-6">
       <div className="max-w-[90%] mx-auto flex-col">
-        <h1 className="text-xl text-gray-300 text-center">Exercises</h1>
+        <h1 className="text-6xl text-white text-center pb-5">Exercises</h1>
         <ExerciseCards exercises={exercises} />
       </div>
     </div>

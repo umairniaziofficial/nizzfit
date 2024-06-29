@@ -51,7 +51,6 @@ const NavBar = () => {
                 </a>
               </li>
             ))}
-            
           </ul>
         </div>
         <div className="flex items-center gap-6">

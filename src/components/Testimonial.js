@@ -8,7 +8,7 @@ const Testimonial = () => {
           Client Testimonials
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
-          <div className="bg-cOrange rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-cbg rounded-lg shadow-lg overflow-hidden">
             <div className="p-4">
               <p className="text-white mb-4">
                 "NizzFit has completely transformed my fitness journey. The
@@ -38,7 +38,7 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="bg-cOrange rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-cbg rounded-lg shadow-lg overflow-hidden">
             <div className="p-4">
               <p className="text-white mb-4">
                 "The yoga classes at NizzFit have been a game-changer for my
@@ -68,12 +68,12 @@ const Testimonial = () => {
             </div>
           </div>
 
-          <div className="bg-cOrange rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-cbg rounded-lg shadow-lg overflow-hidden">
             <div className="p-4">
               <p className="text-white mb-4">
                 "I've been a runner for years, and NizzFit's training programs
-                have taken my performance to the next level. Their dedication
-                to excellence is unmatched."
+                have taken my performance to the next level. Their dedication to
+                excellence is unmatched."
               </p>
               <p className="font-bold text-white">Michael Brown</p>
               <p className="text-sm text-white mb-2">Runner</p>

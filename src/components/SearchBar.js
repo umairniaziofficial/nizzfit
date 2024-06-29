@@ -76,7 +76,7 @@ const SearchBar = () => {
           </button>
           <button
             type="button"
-            className="bg-gray-500 py-2 px-3 border-[1px] rounded-lg border-gray-300 ml-2 transition-colors duration-200 hover:bg-gray-600"
+            className="bg-cbg py-2 px-3 border-[1px] rounded-lg border-gray-300 ml-2 transition-colors duration-200 hover:bg-gray-600"
             onClick={handleClear}
           >
             Clear
