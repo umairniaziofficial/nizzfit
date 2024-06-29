@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'; 
-import Exercises from './pages/Exercises'; 
+import Exercises from './pages/ExercisesPage'; 
 import "./output.css";
 import {BodyPartProvider } from "./context/BodyPartContext"
 

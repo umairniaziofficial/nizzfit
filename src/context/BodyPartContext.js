@@ -4,10 +4,10 @@ const BodyPartContext = createContext();
 
 const BodyPartProvider = ({ children }) => {
   const [bodyPart, setBodyPart] = useState(null);
-  const [exercises,setExercies] = useState([]);
+  const [exercises, setExercises] = useState([]);
 
   return (
-    <BodyPartContext.Provider value={{ bodyPart, setBodyPart,exercises,setExercies }}>
+    <BodyPartContext.Provider value={{ bodyPart, setBodyPart, exercises, setExercises }}>
       {children}
     </BodyPartContext.Provider>
   );
