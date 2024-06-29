@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'; 
-import Exercises from './pages/ExercisesPage'; 
 import "./output.css";
 import {BodyPartProvider } from "./context/BodyPartContext"
+import ExerciseDetails from "./pages/ExerciseDetail"
+
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <div className='min-h-screen w-full overflow-hidden'>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/exercises" element={<Exercises />} />
+            <Route path="/exercise/:id" element={<ExerciseDetails />} />
           </Routes>
         </div>
       </BodyPartProvider>

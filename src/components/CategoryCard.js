@@ -36,7 +36,7 @@ const CategoryCard = () => {
     <div className="w-full mx-auto pt-12 lg:flex items-center justify-center overflow-x-auto scrollbar">
       <ScrollMenu>
         {categories.map((item, index) => (
-          <div key={index} className="mx-4 mb-12">
+          <div key={index} className="mx-4 mb-12 max-sm:mb-0">
             <div
               onClick={() => handleCategoryClick(item)}
               className={`px-8 py-12 max-h-[48px] rounded-lg text-center transition-transform flex items-center justify-center transform hover:cursor-pointer border ${bodyPart === item

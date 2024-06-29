@@ -19,3 +19,12 @@ export const fetchData = async (url, options) => {
 	  'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
 	}
 };
+
+export const YoutubeOptions = {
+	method : 'GET',
+	headers:{
+		'x-rapidapi-key': process.env.REACT_APP_X_RAPID_YOUTUBE_API_KEY,
+		'x-rapidapi-host': 'youtube-search-and-download.p.rapidapi.com'
+	}
+
+}

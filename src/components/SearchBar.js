@@ -4,7 +4,7 @@ import { ExerciseOptions, fetchData } from "../utils/fetchData";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
-  const [searchMessage, setSearchMessage] = useState(""); // State for displaying search message
+  const [searchMessage, setSearchMessage] = useState("");
   const { exercises, setExercises } = useContext(BodyPartContext);
 
   const handleSubmit = async (e) => {
@@ -18,13 +18,12 @@ const SearchBar = () => {
           exercise.equipment.toLowerCase().includes(searchTerm) ||
           exercise.bodyPart.toLowerCase().includes(searchTerm)
       );
-      
+
       if (filteredExercises.length > 0) {
         setExercises(filteredExercises);
-        setSearchMessage(""); // Clear search message if results are found
+        setSearchMessage("");
       } else {
-        setSearchMessage("No results found."); // Set message when no results found
-        // If no results found, fetch all exercises
+        setSearchMessage("No results found.");
         const response = await fetchData(
           "https://exercisedb.p.rapidapi.com/exercises",
           ExerciseOptions
@@ -32,7 +31,7 @@ const SearchBar = () => {
         setExercises(response);
       }
     } else {
-      setSearchMessage(""); 
+      setSearchMessage("");
       const response = await fetchData(
         "https://exercisedb.p.rapidapi.com/exercises",
         ExerciseOptions
@@ -42,13 +41,13 @@ const SearchBar = () => {
   };
 
   const handleClear = async () => {
-    setSearch(""); // Clear the search input
-    setSearchMessage(""); // Clear search message
+    setSearch("");
+    setSearchMessage("");
     const response = await fetchData(
       "https://exercisedb.p.rapidapi.com/exercises",
       ExerciseOptions
     );
-    setExercises(response); // Fetch all exercises
+    setExercises(response);
   };
 
   return (

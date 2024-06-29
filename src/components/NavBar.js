@@ -55,9 +55,6 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="flex items-center gap-6">
-          <button className="bg-cOrange text-white px-5 py-2 rounded-full brightness-75 hover:brightness-100 transition-colors duration-200">
-            Sign in
-          </button>
           <Menu
             onClick={onToggleMenu}
             className="text-3xl cursor-pointer md:hidden"

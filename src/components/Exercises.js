@@ -28,10 +28,10 @@ const Exercises = () => {
     };
 
     fetchExercises();
-  }, [bodyPart, setExercises]); // Fetch whenever bodyPart changes
+  }, [bodyPart, setExercises]); 
 
   return (
-    <div className="w-screen bg-black text-white py-12">
+    <div className="w-screen bg-black text-white py-4">
       <div className="max-w-[90%] mx-auto flex-col">
         <h1 className="text-xl text-gray-300 text-center">Exercises</h1>
         <ExerciseCards exercises={exercises} />
