@@ -2,11 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'; 
 import "./output.css";
-import {BodyPartProvider } from "./context/BodyPartContext"
+import { BodyPartProvider } from "./context/BodyPartContext"
 import ExerciseDetails from "./pages/ExerciseDetail"
 import AboutUs from "./pages/Aboutus"
 import ContactUs from './pages/ContactUs';
-
 
 const App = () => {
   return (

@@ -14,7 +14,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="bg-cbg text-gray-300 h-[10%] flex justify-between items-center">
+    <header className="bg-cbg text-gray-300 h-[10%] flex justify-between items-center z-10">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
         <div className="flex items-center">
           <a href="/">

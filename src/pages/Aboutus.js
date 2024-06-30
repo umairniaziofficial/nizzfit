@@ -17,7 +17,7 @@ const AboutUs = () => {
           thriving fitness community known for our dedication to excellence and
           personalized approach to fitness training.
         </p>
-        <div className="relative  mx-auto items-center pb-4">
+        <div className="mx-auto items-center pb-4">
           <img
             src={BannerImage}
             alt="About Us Banner"
@@ -66,7 +66,7 @@ const AboutUs = () => {
           live your healthiest life.
         </p>
 
-        <div className="relative  mx-auto items-center pb-4">
+        <div className="mx-auto items-center pb-4">
           <img
             src={AboutTwo}
             alt="Happy Customers"
