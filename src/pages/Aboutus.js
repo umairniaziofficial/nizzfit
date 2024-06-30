@@ -2,6 +2,7 @@ import React from "react";
 import BannerImage from "../assets/about-banner.jpg";
 import AboutTwo from "../assets/about-second.jpg";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const AboutUs = () => {
   return (
@@ -80,6 +81,7 @@ const AboutUs = () => {
           towards a better you.
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };

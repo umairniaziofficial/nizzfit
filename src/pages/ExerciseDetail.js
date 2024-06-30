@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom"; 
 import { fetchData, ExerciseOptions, YoutubeOptions } from "../utils/fetchData";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const ExerciseDetail = () => {
   const { id } = useParams();
@@ -15,7 +16,6 @@ const ExerciseDetail = () => {
       try {
         setLoading(true);
 
-        // Fetch exercise details
         const exerciseResponse = await fetchData(
           `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`,
           ExerciseOptions
@@ -130,7 +130,6 @@ const ExerciseDetail = () => {
           </div>
         </div>
 
-        {/* Exercise Instructions and YouTube Videos */}
         <div className="flex-1">
           <h4 className="text-4xl pb-4">How to do this Exercise?</h4>
           {exercise.instructions.length > 0 ? (
@@ -168,6 +167,7 @@ const ExerciseDetail = () => {
         </div>
       </div>
     </div>
+    <Footer/>
    </div>
   );
 };

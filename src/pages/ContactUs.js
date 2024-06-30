@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MapPin, Phone, Mail } from "react-feather"; // Import icons for contact information
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -144,6 +145,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
